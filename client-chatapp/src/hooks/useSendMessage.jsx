@@ -10,17 +10,14 @@ const useSendMessage = () => {
     if (!selectedConversation) return;
     setLoading(true);
     try {
-      const res = await fetch(
-        `http://localhost:8080/api/messages/send/${selectedConversation.id}`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          credentials: "include",
-          body: JSON.stringify({ message }),
-        }
-      );
+      const res = await fetch(`/api/messages/send/${selectedConversation.id}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+        body: JSON.stringify({ message }),
+      });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error);
       setMessages([...messages, data]);
