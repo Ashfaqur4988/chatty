@@ -8,7 +8,7 @@ const SendMessage = () => {
   const { loading, sendMessage } = useSendMessage();
   const handleSendMessage = async (e) => {
     e.preventDefault();
-    console.log(newMessage);
+    // console.log(newMessage);
     if (!newMessage.trim()) return;
     await sendMessage(newMessage);
     setNewMessage("");

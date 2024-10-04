@@ -22,7 +22,7 @@ const userSocketMap = {}; //{userId : socketId}
 
 //listening for connections & storing userId : socketId in userSocketMap
 io.on("connection", (socket) => {
-  console.log("a user connected", socket.id);
+  // console.log("a user connected", socket.id);
 
   const userId = socket.handshake.query.userId;
 
