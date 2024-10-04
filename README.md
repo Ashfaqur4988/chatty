@@ -11,7 +11,7 @@ A **real-time chat application** built using **React** and **JavaScript** for th
 - [Database Schema](#database-schema)
 - [API Endpoints](#api-endpoints)
 - [Usage](#usage)
-- [Use Credentials](#User-Credentials)
+- [User Credentials](#User-Credentials)
 - [Contributing](#contributing)
 - [License](#license)
 
