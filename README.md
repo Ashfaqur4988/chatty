@@ -213,6 +213,8 @@ model Message {
 
 To test the app user can enter these credentials:
 
+[App Link](https://chatty-pgis.onrender.com)
+
 ```bash
 User One
 username: tony
